@@ -1775,6 +1775,9 @@ end
 @deprecate realmin floatmin
 @deprecate realmax floatmax
 
+@deprecate sortrows(A::AbstractMatrix; kws...) sortslices(A, dims=:rows, kws...)
+@deprecate sortcols(A::AbstractMatrix; kws...) sortslices(A, dims=:cols, kws...)
+
 # END 0.7 deprecations
 
 # BEGIN 1.0 deprecations
